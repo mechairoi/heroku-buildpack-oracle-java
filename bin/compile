@@ -27,11 +27,11 @@ statusn "Installing JDK..."
 install_java $CACHE_DIR $BUILD_DIR
 echo " version $(java_version) installed"
 
-if [ "true" == $JCE ]; then
-  statusn "Installing JCE Unlimited Strength..."
-  install_jce
-  echo " done"
-fi
+# if [ "true" == $JCE ]; then
+#   statusn "Installing JCE Unlimited Strength..."
+#   install_jce
+#   echo " done"
+# fi
 
 # statusn "Installing Maven..."
 # install_maven $CACHE_DIR
