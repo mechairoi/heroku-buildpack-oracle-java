@@ -23,7 +23,7 @@ statusn "Installing wget..."
 install_wget $CACHE_DIR
 echo " version $(wget_version) installed"
 
-statusn "Installing JDK..."
+statusn "Installing JDK... to $BUILD_DIR"
 install_java $CACHE_DIR $BUILD_DIR
 echo " version $(java_version) installed"
 
